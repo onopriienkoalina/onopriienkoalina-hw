@@ -1,0 +1,217 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:16px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+body {
+    padding: 30px;
+}
+form {
+    margin-bottom: 30px;
+}
+input[type=checkbox]:checked +label{
+    color: red;
+  }
+input[type=radio]:checked +label{
+    color: red;
+  }
+ul li:nth-child(3n+3){
+    color: yellow;
+  }
+ul li:nth-child(5n+5):hover {
+     background-color: blueviolet;
+  }
+ul {
+    margin-bottom: 30px;
+}
+li {
+    display: block;
+}
+li::before {
+    content: "";
+    background: url("../images/ok.png") center;
+    width: 18px;
+    height: 15px;
+    display: inline-block;
+    margin-right: 10px;
+   }
+li:first-letter {
+    font-size: 150%;
+    color: red;
+    font-weight: bold;
+   }
+.new {
+    margin-bottom: 30px;
+}
+p.new.before__element:before {
+    content: '';
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: red;
+	display: inline-block;
+	margin: 0px 10px 0px 0px;
+}
+abbr {
+    display: block;
+    margin-bottom: 30px;
+}
+abbr:first-line {
+    color: red;
+}
+p.new.back::after {
+    content: "→";
+}
+/*div:before {
+    content:" - "; 
+    color:red;
+    font-family:"Tahoma" ,Times New Roman;
+    font-size:70%;
+}*/
+div {
+    margin-bottom: 30px;
+}
+.exercise__3 div::first-letter {
+    font-size: 150%;
+    color: red;
+}
+.exercise__3 a:hover:before{
+    content: 'Click here!'; 
+    background: red; 
+    color: white;
+    margin-right: 5px;
+}
+.exercise__4 {
+    margin-bottom: 30px;
+    background: repeating-linear-gradient(
+        45deg,
+        #7fffd4 10%,
+        #f0ffff 30%
+      );
+} 
+a[href="https://htmlweb.ua/"] {
+    color: blueviolet;
+}
+div div>a[href="https://htmlweb.ua/"] {
+    background: radial-gradient(
+        at bottom, 
+        orangered, 
+        yellow, 
+        gold
+        );
+}
+div div>a[href$="/css"]:hover {
+    border: 5px solid;
+    border-top-color: #AC2D01;
+    border-left-color: #AC2D01;
+    border-bottom-color: red;
+    border-right-color: red;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.exercise__4 div~a:visited {
+    color: yellow;
+}
+.exercise__4 div>a:last-child::selection {
+    color: red;
+    font-weight: bold;
+    background-color: green;
+}
+h1 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.exercise__5 a {
+    color: black;
+    text-decoration: underline;
+}
+.exercise__5 p {
+    margin-top: 15px;
+}
+/*.exercise__5 a:first-of-type:hover {
+    color: red;
+}
+.exercise__5 a:nth-of-type(2):hover {
+    color: green;
+}
+.exercise__5 a:last-of-type:hover {
+    color: blue;
+}
+.exercise__5 a:first-of-type::selection {
+    background-color: red;
+}
+.exercise__5 a:nth-of-type(2)::selection {
+    background-color: green;
+}
+.exercise__5 a:last-of-type::selection {
+    background-color: blue;
+}
+.exercise__5 p:first-of-type:first-letter {
+    color: red;
+}
+.exercise__5 p:nth-of-type(2):first-letter {
+    color: green;
+}
+.exercise__5 p:last-of-type:first-letter {
+    color: blue;
+}
+.exercise__5 p:first-of-type::selection {
+    background-color: red;
+}
+.exercise__5 p:nth-of-type(2)::selection {
+    background-color: green;
+}
+.exercise__5 p:last-of-type::selection {
+    background-color: blue;
+}*/
+.exercise__5 a:first-of-type:hover,
+.exercise__5 p:first-of-type:first-letter {
+    color: red;
+}
+.exercise__5 a:nth-of-type(2):hover,
+.exercise__5 p:nth-of-type(2):first-letter {
+    color: green;
+}
+.exercise__5 a:last-of-type:hover,
+.exercise__5 p:last-of-type:first-letter {
+    color: blue;
+}
+.exercise__5 a:first-of-type::selection,
+.exercise__5 p:first-of-type::selection {
+    background-color: red;
+}
+.exercise__5 a:nth-of-type(2)::selection,
+.exercise__5 p:nth-of-type(2)::selection {
+    background-color: green;
+}
+.exercise__5 a:last-of-type::selection,
+.exercise__5 p:last-of-type::selection {
+    background-color: blue;
+}
+.exercise__5 p:first-of-type:active {
+    color: red;
+}
+.exercise__5 p:nth-of-type(2):active {
+    color: green;
+}
+.exercise__5 p:last-of-type:active{
+    color: blue;
+}
+.exercise__5 p:active::first-letter {
+    color: black;
+}
+
+
